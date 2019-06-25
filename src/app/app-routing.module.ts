@@ -6,6 +6,7 @@ import { MusicasComponent } from './musicas/musicas.component';
 import { ArtistaComponent } from './artista/artista.component';
 import { GeneroComponent } from './genero/genero.component';
 import { PesquisaComponent } from './pesquisa/pesquisa.component';
+import {EstatisticasComponent} from './estatisticas/estatisticas.component';
 
 const routes: Routes = [
   { path: 'artistas/:id', component: ArtistaComponent },
@@ -13,7 +14,8 @@ const routes: Routes = [
   { path: 'musicas/:id', component: MusicaComponent },
   { path: 'generos/:id', component: GeneroComponent },
   { path: 'pesquisa', component: PesquisaComponent },
-  { path: '', component: HomeComponent }
+  { path: 'artistas/estatisticas', component: EstatisticasComponent},
+  { path: '', component: HomeComponent},
 ];
 
 @NgModule({

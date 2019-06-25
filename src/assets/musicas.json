@@ -14,8 +14,8 @@
             "id": 1,
             "nome": "Samba de Raiz"
         },
-        "letra": "letra da musica",
-        "clipe": "https://www.youtube.com/watch?v=mhDb8Pk1YCE"
+        "letra": "letra da musica\nletra da musica\n letra da musica",
+        "clipe": "https://www.youtube.com/embed/RCbiiVyOX1w"
     },
     {
         "id": 2,

@@ -32,4 +32,19 @@ export class ArtistasService extends DadosBaseService {
     );
   }
 
+  mais() {
+    return this.lista().pipe(
+      map(artistas => {
+        let mais = null;
+        for (let artista of artistas) {
+          if (!mais) {
+            mais = artista;
+          } else if ( artista.musicas.length > mais.musicas.length) {
+            mais = artista;
+          }
+        }
+      })
+    );
+  }
+
 }

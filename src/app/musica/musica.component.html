@@ -24,12 +24,11 @@
       <span class="badge badge-danger bg-dark">{{musica.naoGostar}}</span>
     </button>
   </div>
-  <div>
+  <div style="white-space:pre-line">
     {{ musica.letra }}
   </div>
   <div>
-    <iframe width="560" height="315" src="{{ musica.clipe }}" frameborder="0" allow="autoplay;encrypted-media" allowfullscreen></iframe>
-  </div>
+    <iframe width="560" height="315" src="{{musica.clip}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  </div>
   <div class="mt-4" *ngIf="relacionadas">
     <app-lista-de-musicas [musicas]="relacionadas"></app-lista-de-musicas>
   </div>
